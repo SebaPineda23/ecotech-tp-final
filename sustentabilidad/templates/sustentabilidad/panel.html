@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ titulo }}</title>
+</head>
+<body>
+    <h1>{{ titulo }}</h1>
+
+    <p><strong>Total global de emisiones:</strong> {{ total_emisiones|floatformat:2 }} kg CO₂</p>
+    <p><strong>Planta de mayor consumo:</strong> {{ planta_mayor_consumo }}</p>
+
+    <h2>Detalle por planta</h2>
+        <table border="1" cellpadding="6">
+        <tr><th>Planta</th><th>Consumo (kWh)</th><th>Emisiones (kg CO₂)</th></tr>
+        {% for fila in filas %}
+        <tr>
+            <td>{{ fila.planta }}</td>
+            <td>{{ fila.consumo }}</td>
+            <td>{{ fila.emisiones|floatformat:2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

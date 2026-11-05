@@ -1,0 +1,18 @@
+[
+    {
+        "tipo": "PanelSolar",
+        "codigo": "PS-001",
+        "nombre": "Panel Monocristalino 450W",
+        "precio": 320.5,
+        "stock": 25,
+        "potencia_w": 450,
+        "eficiencia": 21.5
+    },
+    {
+        "tipo": "DispositivoEcológico",
+        "codigo": "CB-010",
+        "nombre": "Cargador Solar Portátil",
+        "precio": 45.0,
+        "stock": 100
+    }
+]
